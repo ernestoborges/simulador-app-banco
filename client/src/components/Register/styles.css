@@ -1,0 +1,82 @@
+.register-form {
+  max-height: 50rem;
+  min-width: 36rem;
+  width: 36rem;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  color: var(--font-color2);
+  background: var(--background2);
+}
+.register-form > h1 {
+  font-weight: normal;
+}
+.register-form > h3,
+.register-form > h3 > * {
+  font-size: 2.2rem;
+  font-family: "Fragment Mono", monospace;
+  text-align: left;
+}
+.register-form > h3 > span {
+  border-bottom: 2px solid var(--background);
+}
+.register-form > section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.register-form > section > label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.register-form > section > label > input {
+  width: 100%;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--background);
+  padding: 0 0 0.4rem 0;
+  caret-color: var(--purple);
+  outline: none;
+}
+.register-form > section > label > div {
+  height: 2rem;
+}
+.register-form > section > label > div > span {
+  font-size: 1.2rem;
+  color: #ff0000;
+}
+
+.register-form > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.register-form > div > a {
+  color: var(--font-color2);
+  text-decoration: none;
+  border-bottom: 0.1px solid var(--background);
+  padding-bottom: 0.1rem;
+  width: 4rem;
+}
+.register-form > div > a:hover {
+  border-color: var(--purple);
+  color: var(--purple);
+}
+
+.register-form > p:first-child{
+  color: red;
+  text-decoration: underline;
+}

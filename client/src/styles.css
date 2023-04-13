@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  font-family: "Helvetica", sans-serif;
+}
+
+:root {
+  font-size: 10px;
+
+  --background: #000000;
+  --font-color: #ffffff;
+  --background2: #ffffff;
+  --font-color2: #000000;
+  --button-color: #ffffff;
+  --button-text: #000000;
+  --purple: #7431f4;
+  --green: #01ca30;
+  --pink: #ff00fe;
+}
+
+.App {
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+  color: var(--font-color);
+}
+body {
+  background-color: var(--background);
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}

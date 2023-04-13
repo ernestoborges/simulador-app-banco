@@ -1,0 +1,58 @@
+.custom-buttom {
+  width: 100%;
+  height: 4.2rem;
+  background-color: var(--background);
+  border: 0.1rem solid var(--button-color);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.main-button {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  min-height: 3.6rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+  border: 0.1rem solid var(--button-text);
+  position: relative;
+  right: 0.4rem;
+  bottom: 0.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.main-button:focus {
+  animation: button-click 0.2s forwards;
+}
+/* purple btn */
+.purple-btn:hover {
+  border-color: var(--purple);
+}
+.purple-btn:hover > button {
+  background-color: var(--purple);
+}
+/* green btn */
+
+.green-btn:hover {
+  border-color: var(--green);
+}
+.green-btn:hover > button {
+  background-color: var(--green);
+}
+
+@keyframes button-click {
+  0% {
+    right: 0.4rem;
+    bottom: 0.6rem;
+  }
+  50% {
+    right: 0;
+    bottom: 0;
+    border: 0.1rem solid transparent;
+  }
+  100% {
+    right: 0.4rem;
+    bottom: 0.6rem;
+    border: 0.1rem solid var(--button-text);
+  }
+}

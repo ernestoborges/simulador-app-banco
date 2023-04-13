@@ -1,0 +1,183 @@
+body {
+    background-color: var(--background);
+}
+
+.user-section {
+  max-height: 60rem;
+  min-width: 36rem;
+  width: 36rem;
+  height: 100%;
+  border-radius: 0.8rem;
+  border: 0.2rem solid var(--background2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-image: url("/public/images/ngcashwallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.content-container > div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+/* logout button */
+.content-container > div:nth-child(1) > .custom-buttom {
+    width: 6rem;
+}
+
+/* eye button */
+
+.hide-input-btn{
+    width: 4.4rem;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--background2);
+    border: 0.1rem solid var(--background2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+.eye-open {
+    border: 0.1rem solid var(--background);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.4rem 1.4rem 0.4rem 1.4rem;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eye-open > div {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--background);
+    position: relative;
+}
+.eye-open > div > div {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: var(--background2);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.eye-close {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eye-close > div:nth-child(1) {
+    border: 0.1rem solid var(--background);
+    background-color: var(--background2);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: translateY(-1rem);
+    z-index: 2;
+
+}
+.eye-close > div:nth-child(2) {
+    background-color: var(--background2);
+    /* background-color: red; */
+    width: 100%;
+    height: 1.2rem;   
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+.eye-close > div:nth-child(3) {
+    background-color: var(--background2);
+    width: 100%;
+    height: 100%;   
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+.eye-close > div:nth-child(3) > div {
+    background-color: var(--background);
+    width: 0.1rem;
+    height: 1rem;   
+    z-index: 1;
+}
+/* eyelashes */
+.eye-close > div:nth-child(3) > div:nth-child(1) {
+    transform: rotate(45deg);
+}
+.eye-close > div:nth-child(3) > div:nth-child(2) {
+    transform: translateY(0.3rem) rotate(30deg);
+}
+.eye-close > div:nth-child(3) > div:nth-child(3) {
+    transform: translateY(0.4rem) rotate(0deg);
+}
+.eye-close > div:nth-child(3) > div:nth-child(4) {
+    transform: translateY(0.3rem) rotate(-30deg);
+}
+.eye-close > div:nth-child(3) > div:nth-child(5) {
+    transform: rotate(-45deg);
+}
+
+
+
+/* balance output */
+.content-container > div:nth-child(2){
+    width: 100%;
+    background-color: var(--font-color);
+    color: var(--font-color2);
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+.content-container > div:nth-child(2) > output {
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* payment and transaction buttons */
+
+.options-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.options-section > div:first-child{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+// return button
+
+.return-btn {
+    width: 3rem !important;
+    background-color: red;
+}
+
