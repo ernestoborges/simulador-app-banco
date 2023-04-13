@@ -1,18 +1,27 @@
-Primeiro descompacte o projeto.rar em um diretorio
+<h1>Simulado de App de Banco</h1>
 
-Depois disso, instale as dependências do Front-end e do Back-end:
+<p>
+Esse projeto é uma aplicação que simula as funções basicas de um app de banco como criação de usuário, transação entre usuários e listagem de transações por usuários. O design escolhido é inpirado no aplicativo do banco NG.CASH.
+</p>
+
+
+<h2>Instalação</h2>
+
+<p>
+Para testar esse projeto é preciso primeiro criar um banco de dados com PostgreSQL e seguir os próximos passos.
+</p>
 
 Front-end: 
-  acesse a pasta "client" e execute o seguinte comando:
+  acesse a pasta "client" e instale as dependências:
 ```sh
     $ npm install
 ```
 Back-end: 
-  acesse a pasta "servidor" e execute o seguinte comando:
+  acesse a pasta "servidor" e instale as dependências:
 ```sh
     $ npm install
 ```
-  configure o arquivo "ormconfig.json" conforme suas informações do banco de dados
+  ainda na pasta "servidor" configure o arquivo "ormconfig.json" conforme suas informações do banco de dados
 ```sh
     {
       "type": "postgres",
