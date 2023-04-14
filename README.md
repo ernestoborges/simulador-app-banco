@@ -1,4 +1,4 @@
-<h1>Simulado de App de Banco</h1>
+<h1>Simulador de App de Banco</h1>
 
 <p>
 Esse projeto é uma aplicação que simula as funções basicas de um app de banco como criação de usuário, transação entre usuários e listagem de transações por usuários. O design escolhido é inpirado no aplicativo do banco NG.CASH.
